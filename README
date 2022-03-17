@@ -1,0 +1,22 @@
+Final Project
+
+Em Eldar
+CSCI 5229 Fall 2020
+
+WARNING: This program captures your mouse, to stop the capture, exit the program.
+
+This is a ray marching shader I built from scratch. I generate camera rays for each pixel on the screen and march them using an SDF. 
+I then approximate the normal vector using the gradient of the SDF and use that as the ambient and diffuse color, using a white light 
+as the specular color. After calculating these three components, I then calculate the phong shading of the pixel by combing the ambient 
+color with the diffuse and specular color for each light source in the scene. I have a range of different models you can explore including
+a shifting mandelbulb. I have also implemented a First person camera, allowing you to move around and explore the models. I made sure to
+include strafing and smooth movement by calculating a deltaTime using glut.
+
+
+Key bindings
+  Mouse					Look around
+  wasd					Move around
+  Spacebar				Toggle faster movement
+  F/f					Increase/decrease fov
+  m/M					Cycles through models
+  ESC       	 		Exit
